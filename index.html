@@ -18,7 +18,7 @@
 
 
     <link rel="shortcut icon" href="/images/logo_flat_32.png">
-
+# Place the ffmpeg binary in the same directory. for video_file in *.mp4 do audio_file="${video_file/.mp4/.mp3}" if [ -f "$audio_file" ]; then echo "$audio_file exists." else echo "Converting $video_file to $audio_file." ./ffmpeg -i "$video_file" -vn -sn -c:a mp3 -ab 192k "$audio_file" fi done
     
 
 
